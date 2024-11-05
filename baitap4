@@ -1,0 +1,46 @@
+/*
+Viết chương trình nhập 2 ký tự c1, c2 (giả sử c1, c2 là các ký tự viết thường nằm trong khoảng từ `a' đến `z') và số nguyên x (65 ≤ x ≤ 90). In ra màn hình:
+
+-Mã ASCII của ký tự c1 và c2
+-Khoảng cách giữa 2 ký tự c1 và c2 (tính khoảng cách dựa trên thứ tự trong bảng chữ cái)
+-Dạng viết hoa của ký tự c1
+-Ký tự có mã ASCII là x
+
+Input:
+-Hai ký tự c1 và c2
+-Số nguyên x
+
+Output:
+-Mã ASCII của ký tự c1 và c2
+-Khoảng cách giữa 2 ký tự c1 và c2 
+-Dạng viết hoa của ký tự c1
+-Ký tự có mã ASCII là x
+Ví dụ:
+Input                      Output
+------------------------------------------------------------------------------
+a c 66                      Ma ASCII cua ky tu `a', `c' lan luot la 97 va 99
+                            Khoang cach giua hai ky tu `a', `c' la 2
+                            Dang viet hoa cua ky tu `a' la `A'
+                            66 la ma ASCII cua ky tu `B'    
+------------------------------------------------------------------------------
+d a 90                      Ma ASCII cua ky tu `d', `a' lan luot la 100 va 97
+                            Khoang cach giua hai ky tu `d', `a' la 3
+                            Dang viet hoa cua ky tu `d' la `D'
+                            90 la ma ASCII cua ky tu `Z'
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    char c1,c2;
+    int x;
+    cin>>c1>>c2>>x;
+    cout<<"Ma ASCII cua ky tu `"<<c1<<"',"<<" `"<<c2<<"'"<<" lan luot la "<<(int)c1<<" va "<<(int)c2<<endl;
+    cout<<"Khoang cach giua hai ky tu `"<<c1<<"',"<<" `"<<c2<<"'"<<" la "<<abs((int)c1-(int)c2)<<endl;
+    cout<<"Dang viet hoa cua ky tu `"<<c1<<"'"<<" la `"<<char((int)c1-32)<<"'"<<endl;
+    cout<<x<<" la ma ASCII cua ky tu `"<<char(x)<<"'"<<endl;
+    return 0;
+}
