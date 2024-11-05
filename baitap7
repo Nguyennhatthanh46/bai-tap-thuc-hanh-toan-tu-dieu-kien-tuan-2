@@ -1,0 +1,30 @@
+/*
+Tìm trị tuyệt đối của một số
+
+INPUT
+Một số nguyên  A
+
+OUTPUT
+Trị tuyệt đối của nó
+
+VÍ DỤ
+Input	                         Output
+--------------------------------------------------
+5                              5
+-5	                           5
+-372036854775807	             372036854775807
+
+*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long A;
+    cin>>A;
+    cout << A*(A>0)-A*(A<0)<<endl;
+    return 0;
+}
