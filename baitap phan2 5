@@ -1,0 +1,59 @@
+/*
+MÔ TẢ BÀI TOÁN
+Viết chương trình phân loại nhân khẩu như sau:
+
+Gender (Giới tính):                        Male (Nam)                Female (Nữ)
+================================================================================
+Age (Tuổi):
+>=21                                       Loại 1                    Loại 2
+--------------------------------------------------------------------------------
+<21                                           Loại 3                    Loại 4
+
+INPUT
+- 1 số nguyên dương có giá trị không quá 100, chỉ tuổi của một người
+
+- 1 ký tự chữ cái chỉ giới tính của một người: M hoặc m (Male) = Nam, F hoặc f (Female) = Nữ
+
+OUTPUT
+- Một số nguyên chỉ mã phân loại của người đó. Ví dụ: 1, 2, 3, 4
+
+- Trường hợp không phân loại được thì xuất thông báo “I do not know why”
+
+
+Input                                     Output
+------------------------------------------------------------------
+38  M                                     1
+__________________________________________________________________
+3   b                                     I do not know why
+__________________________________________________________________ 
+35  f                                     2
+
+*/
+
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+   char a;
+   int b;
+   cin>>b>>a;
+     if((a=='m')||(a=='M')){
+           if(b>=21){
+              cout<<1; 
+           }else{
+               cout<<3;
+           }
+       }
+       if((a=='f')||(a=='F')){
+        if(b>=21){
+              cout<<2; 
+           }else{
+               cout<<4;
+           }
+       } 
+   if((a!='m')&&(a!='M')&&(a!='f')&&(a!='F')){
+       cout<<"I do not know why";
+   }
+}
