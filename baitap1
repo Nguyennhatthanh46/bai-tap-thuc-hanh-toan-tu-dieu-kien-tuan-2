@@ -1,0 +1,12 @@
+Viết chương trình nhập số nguyên dương x có một chữ số. In ra màn hình:
+
+Hình chữ nhật gồm 4 dòng, 6 cột sao cho cạnh của hình chữ nhật được tạo từ số nguyên x đã nhập (các số trên dòng đầu và dòng cuối của hình chữ nhật cách nhau 1 khoảng trắng).
+Tam giác đều với mỗi cạnh được tạo ra từ 6 số nguyên x đã nhập (các số trên cạnh đáy của tam giác cách nhau 1 khoảng trắng).
+Input:
+
+Số nguyên x (0 ≤ x ≤ 9)
+Output:
+
+Hình chữ nhật 4 dòng, 6 cột, với mỗi cạnh được tạo từ số nguyên x
+Tam giác đều với mỗi cạnh được tạo ra từ 6 số nguyên x
+Ví dụ:
