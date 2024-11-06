@@ -10,7 +10,7 @@ Hai dòng: dòng đầu tiên là chiều dài, dòng thứ hai là chiều rộ
 Nếu không thể tính chiều dài và chiều rộng từ chu vi và diện tích thì xuất ra dòng "NA".
 
 VÍ DỤ:
-NPUT         OUTPUT
+INPUT         OUTPUT
 ------------------------------
 36 30        12      3    
 ------------------------------
