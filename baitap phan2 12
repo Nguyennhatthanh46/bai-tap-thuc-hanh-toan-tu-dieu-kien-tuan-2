@@ -1,0 +1,46 @@
+/*
+Ba của Tí là nhân viên địa chính. Một hôm Ba Tí đi đo miếng đất hình chữ nhật của bác Bảy về nhưng gặp trời mưa nên ướt hết tờ giấy ghi các số liệu đo được: chỉ còn đọc được chu vi và diện tích của lô đất.
+Tí đang đi học văn bẳng 2 về tin học nên B Tí nhờ viết chương trình phục hồi chiều dài và chiều rộng của lô đất dựa vào diện tích S và chu vi P của lô đất. Dĩ nhiên là chiều dài sẽ dài hơn chiều rộng rồi.
+
+Input
+Một dòng gồm số nguyên S và P.
+
+Output
+Hai dòng: dòng đầu tiên là chiều dài, dòng thứ hai là chiều rộng. 
+Nếu không thể tính chiều dài và chiều rộng từ chu vi và diện tích thì xuất ra dòng "NA".
+
+VÍ DỤ:
+NPUT         OUTPUT
+------------------------------
+36 30        12      3    
+------------------------------
+11 16        6.23607 1.76393
+
+*/
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double dientich, chuvi;
+    cin >>dientich>>chuvi;
+    if(dientich<0){
+    	cout<<"NA";
+    	return 0;
+	}
+	if(chuvi<0){
+		cout<<"NA";
+		return 0;
+	}
+    double denta =(chuvi*chuvi)/4 - dientich*4;
+    if (denta < 0) {
+        cout<<"NA";
+        return 0;
+    } else {
+    double a = (chuvi/2 + sqrt(denta))/2;
+    double b = (chuvi/2 - sqrt(denta))/2;
+    cout <<a<<" "<<b;
+}
+return 0;
+}
