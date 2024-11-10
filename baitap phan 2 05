@@ -7,7 +7,7 @@ Gender (Giới tính):                        Male (Nam)                Female (
 Age (Tuổi):
 >=21                                       Loại 1                    Loại 2
 --------------------------------------------------------------------------------
-<21                                           Loại 3                    Loại 4
+<21                                        Loại 3                    Loại 4
 
 INPUT
 - 1 số nguyên dương có giá trị không quá 100, chỉ tuổi của một người
