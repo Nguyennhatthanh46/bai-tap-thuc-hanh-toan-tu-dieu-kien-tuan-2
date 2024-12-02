@@ -8,7 +8,7 @@ Dòng thứ hai là số thứ hai.
 OUTPUTXuất ra 0 ( nếu hai số khác nhau), 1 (nếu hai số bằng nhau).
 
 VÍ DỤ:
-NPUT     OUTPUT
+INPUT     OUTPUT
 ----------------
 1          0
 2 
